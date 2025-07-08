@@ -58,6 +58,7 @@ java -jar chat-aggregator/target/chat-aggregator-1.0-SNAPSHOT.jar
 java -jar chat-storage/target/chat-storage-1.0-SNAPSHOT.jar
 java -jar chat-intel/target/chat-intel-1.0-SNAPSHOT.jar
 java -jar api-gateway/target/api-gateway-1.0-SNAPSHOT.jar
+java -jar chat-moderator/target/chat-moderator-1.0-SNAPSHOT.jar
 ```
 
 ### 5. Ejecuta el motor de IA (Ollama)
