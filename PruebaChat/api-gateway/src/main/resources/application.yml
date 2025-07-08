@@ -1,0 +1,11 @@
+server:
+  port: 8086
+
+services:
+  endpoints:
+    youtube:        http://localhost:8080/actuator/health
+    twitch:         http://localhost:8081/actuator/health
+    chat-aggregator: http://localhost:8083/actuator/health
+    chat-storage:   http://localhost:8084/actuator/health
+    chat-intel:     http://localhost:8085/actuator/health
+    chat-moderator: http://localhost:8087/actuator/health

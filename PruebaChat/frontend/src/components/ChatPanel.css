@@ -1,0 +1,48 @@
+.chat-panel {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(120deg, #f8fafc 60%, #e0eafc 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #b2bec330;
+  padding: 2rem 2.5rem;
+  min-width: 320px;
+  max-width: 600px;
+  width: 40vw;
+  margin-right: 1rem;
+  border: 1.5px solid #dde6ed;
+}
+
+.chat-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 1.5rem;
+  max-height: 400px;
+  padding-right: 0.5rem;
+}
+
+.chat-message {
+  background: linear-gradient(90deg, #e0eafc 60%, #f8fafc 100%);
+  border-radius: 10px;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1.1rem;
+  border-left: 4px solid #00b894;
+  box-shadow: 0 1px 4px #b2bec320;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.chat-message.chat-twitch {
+  border-left-color: #9147ff;
+  background: linear-gradient(90deg, #e0eafc 60%, #e9d6ff 100%);
+}
+.chat-message.chat-youtube {
+  border-left-color: #ff0000;
+  background: linear-gradient(90deg, #e0eafc 60%, #ffeaea 100%);
+}
+
+.chat-platform {
+  font-size: 0.95em;
+  color: #636e72;
+  margin-right: 0.5em;
+} 

@@ -1,0 +1,134 @@
+.moderation-panel {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(120deg, #f8fafc 60%, #e0eafc 100%);
+  border-radius: 18px;
+  box-shadow: 0 6px 32px #b2bec330;
+  padding: 2rem 2.5rem;
+  border: 1.5px solid #dde6ed;
+}
+
+.moderation-loading, .moderation-error {
+  color: #8395a7;
+  font-style: italic;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.moderation-error {
+  color: #e17055;
+}
+
+.moderation-stats {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #e0eafc 60%, #f8fafc 100%);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 1px 4px #b2bec320;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.stat-value {
+  font-weight: 500;
+  color: #636e72;
+}
+
+.stat-value.has-violations {
+  color: #e17055;
+  font-weight: 600;
+}
+
+.stat-value.clean {
+  color: #4cd137;
+  font-weight: 600;
+}
+
+.violations-section {
+  margin-top: 1.5rem;
+}
+
+.violations-section h3 {
+  color: #2d3436;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.violations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.violation-item {
+  background: linear-gradient(90deg, #ffe0e0 60%, #fff0f0 100%);
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 4px #b2bec320;
+  border-left: 4px solid #e17055;
+}
+
+.violation-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.violation-user {
+  font-weight: 600;
+  color: #e17055;
+}
+
+.violation-platform {
+  font-size: 0.9em;
+  color: #636e72;
+  background: #f1f3f6;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+}
+
+.violation-time {
+  font-size: 0.85em;
+  color: #8395a7;
+}
+
+.violation-message {
+  color: #2d3436;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.5rem;
+  border-radius: 6px;
+  border-left: 3px solid #e17055;
+}
+
+.moderation-clean {
+  text-align: center;
+  margin-top: 2rem;
+  color: #4cd137;
+}
+
+.clean-icon {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.moderation-clean p {
+  font-weight: 500;
+  margin: 0;
+} 

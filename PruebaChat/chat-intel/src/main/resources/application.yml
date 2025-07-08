@@ -1,0 +1,36 @@
+server:
+  port: 8085
+
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/chatia?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+  redis:
+    host: ${REDIS_HOST:redis-17140.c308.sa-east-1-1.ec2.redns.redis-cloud.com}
+    port: ${REDIS_PORT:17140}
+    password: ${REDIS_PASSWORD:nG7WnuToMJBBpHDHwiv1HuVyCS2fx4tB}
+
+# ZSET donde están los mensajes recientes
+chat:
+  redis:
+    recent-key: "chat:recent"
+    hash-prefix: "chat:msg:"
+
+ollama:
+  url: http://localhost:11434
+  model: gemma3
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health

@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+
+spring.kafka.bootstrap-servers: localhost:9092
+twitch:
+  oauth-token: ${TWITCH_OAUTH_TOKEN}
+  channel:     ${TWITCH_CHANNEL}
+kafka.topic.chat: chat-messages

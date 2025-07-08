@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- hereda todo (BOM, plugins, propiedades…) del parent -->
+    <parent>
+        <groupId>demo.chat</groupId>
+        <artifactId>PruebaChat</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>commons</artifactId>
+    <packaging>jar</packaging>
+
+    <!-- solo necesita Jackson-annotations para @JsonFormat -->
+    <dependencies>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+    </dependencies>
+
+    <!-- anula el plugin de Boot para NO ejecutar “repackage” aquí -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>   <!-- ← clave -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

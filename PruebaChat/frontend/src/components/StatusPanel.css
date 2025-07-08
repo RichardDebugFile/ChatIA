@@ -1,0 +1,39 @@
+.status-panel {
+  background: linear-gradient(120deg, #f8fafc 60%, #e0eafc 100%);
+  color: #2d3436;
+  padding: 1.5rem 2rem;
+  border-radius: 22px;
+  margin-bottom: 2.2rem;
+  box-shadow: 0 6px 32px #b2bec330;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1.5px solid #dde6ed;
+}
+.status-list {
+  display: flex;
+  gap: 2.2rem;
+  margin-top: 0.7rem;
+}
+.status-ok {
+  color: #4cd137;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #e0ffe0 60%, #f0fff0 100%);
+  border-radius: 8px;
+  padding: 0.3em 1em;
+  box-shadow: 0 1px 4px #b2bec320;
+}
+.status-fail {
+  color: #e17055;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(90deg, #ffe0e0 60%, #fff0f0 100%);
+  border-radius: 8px;
+  padding: 0.3em 1em;
+  box-shadow: 0 1px 4px #b2bec320;
+} 

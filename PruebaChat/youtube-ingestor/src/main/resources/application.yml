@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+youtube:
+  api-key: AIzaSyDOaG53PmK4FaTSObN7X7fzU1uNjwVDEG0
+  live-chat-id: Cg0KC25nV0c5U0ZTRGh3KicKGFVDSWJpZGJhdDB6NjdlT2FvUzRKYnZmZxILbmdXRzlTRlNEaHc
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+kafka:
+  topic:
+    chat: chat-messages
