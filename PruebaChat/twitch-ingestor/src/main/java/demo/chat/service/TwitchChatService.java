@@ -16,10 +16,10 @@ public class TwitchChatService {
 
     private final KafkaTemplate<String, ChatMessage> kafka;
     // Credenciales hard-codeadas
-    private final String clientId     = "6faqdgqqn6c67cirmravgukoo40ygs";
-    private final String clientSecret = "aaeiobxy4sq40qyxqdu3vcb8f393ls";
-    private final String oauthToken   = "dwg3rhgkaa1lgcf2dcand6ays17454";
-    private final String channelName  = "richardxr04";
+    private final String clientId     = "";   //Colocar el api propio
+    private final String clientSecret = "";   //Colocar el api propio
+    private final String oauthToken   = "";   //Colocar el api propio
+    private final String channelName  = ""; //Colocar el nombre del canal propio propio
     private final String topic        = "chat-messages";
 
     public TwitchChatService(KafkaTemplate<String, ChatMessage> kafka) {

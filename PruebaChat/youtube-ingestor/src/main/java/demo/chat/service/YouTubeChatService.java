@@ -21,8 +21,8 @@ import java.util.List;
 public class YouTubeChatService {
 
     private final KafkaTemplate<String, ChatMessage> kafka;
-    private final String apiKey       = "AIzaSyDOaG53PmK4FaTSObN7X7fzU1uNjwVDEG0";
-    private final String liveChatId   = "Cg0KC3JfY1NvWDV4QldvKicKGFVDSWJpZGJhdDB6NjdlT2FvUzRKYnZmZxILcl9jU29YNXhCV28";
+    private final String apiKey       = "";   //Colocar el api propio
+    private final String liveChatId   = "";  //Colocar el api propio del chat
     private final String topic        = "chat-messages";
     private YouTube yt;
     private String pageToken = null;
